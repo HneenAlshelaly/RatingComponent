@@ -8,24 +8,41 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <title>Frontend Mentor | Interactive rating component</title>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 <script defer src="bundle.js"></script><link href="css/style.css" rel="stylesheet"></head>
 
 <body>
-  <i class="fa-solid fa-cart-shopping"></i>
 
-  <!-- Rating state start -->
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
+    <!-- Rating state start -->
+  <div class="container">
+    <div class="card ">
+      <div class="card-body">
+        <div class="starImg  ">
+          <img src="images/icon-star.svg" alt="icon-star" class="mx-3 my-3">
+        </div>
+        <h2 class="card-title">How did we do?</h2>
+        <p class="card-text">
+          Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!
+        </p>
+<div class="retingBtn d-inline-flex ">
+          
+  <button class="btn">1</button>
+  <button class="btn">2
+  </button>
+  <button class="btn">3</button>
+  <button class="btn">4</button>
+  <button class="btn">5</button>
+</div>
+  
+        <button type="submit" class="btn btnsubmit d-block text-uppercase">Submit</button>
+      </div>
+    </div>
+  </div>
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
@@ -38,13 +55,10 @@
   don’t hesitate to get in touch!
 
   <!-- Thank you state end -->
-  <button type="button" class="btn btn-primary">Primary</button>
-  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
-    Tooltip on top
-  </button>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Hneen Alshelaly</a>.
   </div>
 </body>
 

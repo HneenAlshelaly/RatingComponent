@@ -1,6 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+}
+
+body{
+    background: var(--VeryDarkBlue);
+    font-family: "Overpass", sans-serif;
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-body{
-    color: red;
+.container{
+    position: relative;
+    height: 80vh;
+}
+
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30rem ;
+    height: 28rem;
+    padding: 20px;
+    border-radius: 35px;
+    background: var(--DarkBlue);
+    color: var(--White);
+}
+
+.card .card-body .starImg{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: hsla(217, 12%, 63%, .1);
+    margin-bottom: 2rem;
+    margin-left: -.5rem;
+}
+
+.card .card-body p{
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    color: var(--LightGrey)
+}
+
+.card .card-body .btnsubmit{
+background: var(--Orange);
+border-radius: 10pc;
+padding: 10px 20px;
+width: 25rem;
+margin: 2rem 0;
+font-weight: 700;
+letter-spacing: 2px;
+}
+
+.card .card-body .retingBtn .btn{
+border-radius: 50%;
+width: 50px;
+height: 50px;
+background-color: hsla(217, 12%, 63%, .1); ;
+margin: 0 1rem;
+color: var(--LightGrey);
 }
