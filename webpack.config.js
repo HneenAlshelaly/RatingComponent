@@ -6,13 +6,13 @@ const { write } = require('fs');
 
 
 module.exports = {
-  mode: 'development',
   entry: {
     app: './src/index.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    publicPath: '/',
   },
 
   devServer: {
@@ -70,6 +70,7 @@ module.exports = {
     new HtmlWebpackPlugin({
     filename: 'index.html',
     template: './src/index.html',
+    inject: true,
   }),
 
   new MiniCssExtractPlugin({
@@ -79,4 +80,10 @@ module.exports = {
   new CssMinimizerPlugin(),
 
 ],
+
+performance: {
+  hints: false,
+  maxAssetSize: 100000,
+  maxEntrypointSize: 400000,
+},
 };

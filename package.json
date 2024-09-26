@@ -2,7 +2,7 @@
   "name": "interactive-rating-component-main",
   "version": "1.0.0",
   "description": "![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)",
-  "main": "script.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack serve --mode production",
